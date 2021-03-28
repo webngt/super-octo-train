@@ -25,3 +25,5 @@ snap install $microk8s_snap --classic
 EOF
 
 chmod 755 /usr/local/bin/launch.sh
+
+mkdir /usr/local/share/tmpfiles

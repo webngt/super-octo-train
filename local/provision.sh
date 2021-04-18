@@ -1,4 +1,4 @@
 #!/bin/bash
 
 apt-get update
-apt-get install nodejs
+DEBIAN_FRONTEND=noninteractive apt-get -yq install nodejs

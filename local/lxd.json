@@ -1,0 +1,23 @@
+{
+    "provisioners": [
+      {
+        "type": "shell",
+        "script": "provision.sh"
+      }
+    ],
+  
+  
+    "builders": [
+      {
+        "type": "lxd",
+        "name": "nodejs-builder",
+        "image": "ubuntu:20.04",
+        "output_image": "microk8s-image",
+        "init_sleep": "10",
+        "publish_properties": {
+          "description": "microk8s image"
+        }
+      }
+    ]
+  }
+  
